@@ -55,3 +55,111 @@ body {
 .nav_bar .nav_links a:hover {
     color: lightgray;
 }
+
+footer {
+    background-color: navy;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+footer a {
+    color: lightgray;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+section {
+    padding: 60px 20px;
+    margin: 20px 0;
+}
+
+section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    margin: 60px auto; /* Center the gallery and add margin to prevent overlap */
+}
+
+.gallery h1, .gallery p {
+    display: block;
+}
+
+.gallery-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin-top: 60px; /* Move gallery container down */
+    justify-content: center; /* Center the gallery items */
+}
+
+.gallery-item {
+    min-width: 200px;
+    margin: 0 10px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.5;
+}
+
+.gallery-item.active {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.gallery-item:not(.active) {
+    transform: scale(0.8);
+}
+
+#projects h1, #projects p {
+    display: block; /* Ensure h1 and p elements are block-level */
+    text-align: center; /* Center align text */
+    margin-bottom: 20px; /* Add margin to separate from gallery */
+}
+
+
