@@ -126,18 +126,14 @@ section ul li {
     overflow: hidden;
     position: relative;
     height: 300px;
-    margin: 60px auto; /* Center the gallery and add margin to prevent overlap */
-}
-
-.gallery h1, .gallery p {
-    display: block;
+    margin: 60px auto;
 }
 
 .gallery-container {
     display: flex;
     transition: transform 0.5s ease;
-    margin-top: 60px; /* Move gallery container down */
-    justify-content: center; /* Center the gallery items */
+    margin-top: 60px;
+    justify-content: center;
 }
 
 .gallery-item {
@@ -157,9 +153,9 @@ section ul li {
 }
 
 #projects h1, #projects p {
-    display: block; /* Ensure h1 and p elements are block-level */
-    text-align: center; /* Center align text */
-    margin-bottom: 20px; /* Add margin to separate from gallery */
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 
