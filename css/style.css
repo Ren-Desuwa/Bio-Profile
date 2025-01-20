@@ -2,6 +2,9 @@ body {
     padding-top: 70px; /* Adjust based on the height of your nav bar */
     margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 #green {
@@ -23,6 +26,11 @@ body {
     justify-content: space-between;
     overflow: hidden;
     box-sizing: border-box;
+    transition: top 0.3s;
+}
+
+.nav_bar.hidden {
+    top: -70px; /* Hide the nav bar */
 }
 
 .nav_bar .logo {
@@ -61,12 +69,10 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
-    position: fixed;
+    position: relative;
     width: 100%;
-    bottom: 0;
-    left: 0;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+    margin-top: auto;
 }
 
 footer a {

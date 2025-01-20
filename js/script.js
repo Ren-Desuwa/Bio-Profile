@@ -20,4 +20,18 @@ document.addEventListener('DOMContentLoaded', function() {
         currentIndex = (currentIndex + 1) % galleryItems.length;
         updateGallery();
     }, 3000);
+
+    // Hide nav bar on scroll
+    let lastScrollTop = 0;
+    const navBar = document.querySelector('.nav_bar');
+
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            navBar.classList.add('hidden');
+        } else {
+            navBar.classList.remove('hidden');
+        }
+        lastScrollTop = scrollTop;
+    });
 });
