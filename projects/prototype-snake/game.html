@@ -6,20 +6,24 @@
         <link rel="stylesheet" href="../../css/game.css">
         <title>Game</title>
         <link rel="icon" href="../../images/logo.jpg" type="image/x-icon">
-        <script type="text/javascript" src="../../js/game.js"></script>
+        <script type="text/javascript" src="../../js/game.js" defer></script>
     </head>
 
     <body>
         <div class="nav_bar">
             <div class="logo">MyLogo</div>
             <ul class="nav_links">
-                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="game.html">Game</a></li>
             </ul>
         </div>
 
         <section id="game">
             <h1>Game</h1>
+            <div class="controls">
+                <button id="toggle-button">Switch to Flagging</button>
+                <div id="bomb-counter">Bombs remaining: 20</div>
+            </div>
             <div id="game-container">
                 <!-- Game content will go here -->
             </div>
@@ -28,7 +32,7 @@
         <footer>
             <p>Contact me at: <a href="mailto:example@example.com">example@example.com</a></p>
             <ul>
-                <li><a href="../../index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="game.html">Game</a></li>
             </ul>
         </footer>

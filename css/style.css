@@ -163,11 +163,26 @@ section ul li {
 
 .gallery-item:not(.active) {
     transform: scale(0.8);
-}#projects h1, #projects p {
+}
+
+#projects h1, #projects p {
     display: block;
     text-align: center;
     margin-bottom: 20px;
     color: #d7b377; /* Projects section text color */
+}
+
+/* Add styles for back to home link */
+header a {
+    display: block;
+    margin-top: 10px;
+    color: #73FBD3;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: #00BBF9;
 }
 
 
